@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Responsive Images Gallery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row{
+            display: flex;
+            flex-wrap:wrap;
+            padding: 0 4px;
+        }
+        .column {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            padding:0 4px;
+        }
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        @media only screen and (max-width: 850px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <!-- First Column -->
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1675227263485-ae463b2b7f2c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1680988242699-a1a0428f3fd9?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHwxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1422976280096-9126a41f9e2a?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1481467804160-3cdf91aa1ac4?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OHwxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1503516459261-40c66117780a?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTF8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588728670202-a206ec09a11d?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTR8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588495644862-6ad15ab88352?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTV8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588598046214-acc6a5e46174?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTh8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+        </div>
+
+         <!-- Second Column -->
+         <div class="column">
+            <img src="https://images.unsplash.com/photo-1675057924731-35d553982962?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnwxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1598472585386-9e8538b80424?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NnwxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1473082538761-d4c7cd3f5e91?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588979355214-7aafed4fea14?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTJ8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588539436711-f0b67a53f987?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTZ8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588534724279-d1012d1d08d1?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTl8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+           
+        </div>
+
+         <!-- Third Column -->
+         <div class="column">
+            <img src="https://images.unsplash.com/photo-1678251541680-5b48c9241ac8?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1594067062150-01d097aeb141?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXwxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1527249014055-1b2b9d5e9fbe?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXwxMDA0Mzc3NXx8ZW58MHx8fHx8" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588672489918-0791d6d46bc8?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588510638255-0f757ef4408c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTd8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1588528511348-6dc466b5efad?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjB8MTAwNDM3NzV8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%;">
+            
+        </div>
+    </div>
+</body>
+</html>
